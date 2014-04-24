@@ -54,11 +54,13 @@ public:
   JointDynamics() { this->clear(); };
   double damping;
   double friction;
+  bool   fwdDyn;
 
   void clear()
   {
     damping = 0;
     friction = 0;
+    fwdDyn = false;
   };
 };
 
